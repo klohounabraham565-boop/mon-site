@@ -1,0 +1,343 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.hero {
+    background-color: lightgray;
+    padding: 30px;
+    text-align: center;
+}
+
+.hero h1 {
+    color: darkblue;
+    font-size: 5vw;
+    margin: 0;
+}
+
+.hero p {
+    color: #333;
+    font-size: 1.2rem;
+}
+
+
+/* Navigation */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    background-color: #222;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Contenu principal */
+
+main {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+
+/* Sections */
+
+section {
+    padding: 30px;
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+
+/* Image */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Compétences */
+
+.competences {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.competence {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    min-width: 100px;
+    text-align: center;
+}
+
+
+/* Bouton */
+
+.btn {
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+
+/* Formulaire */
+
+#contact {
+    max-width: 700px;
+    margin: 0 auto 25px;
+}
+
+#contact h2 {
+    text-align: center;
+}
+
+form {
+    width: 100%;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+form textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+form button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+/* Pied de page */
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Téléphone */
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    #contactForm {
+        width: 100%;
+    }
+
+    form input,
+    form textarea {
+        font-size: 16px;
+    }
+}
+/* ===== FORMULAIRE DE CONTACT ===== */
+
+#contactForm {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.25);
+}
+
+#contactForm button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+    background: #111827;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    background: #2563eb;
+}
+
+#formMessage {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ===== ADAPTATION TÉLÉPHONE ===== */
+
+@media (max-width: 600px) {
+
+    #contact {
+        margin: 20px 10px;
+        padding: 18px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 16px;
+    }
+
+    #contactForm button {
+        padding: 14px;
+    }
+}
+/* ===== COULEURS DU SITE ===== */
+
+body {
+    background-color: #f5f7fb;
+    color: #1f2937;
+}
+
+header {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    color: white;
+}
+
+nav {
+    background-color: #2563eb;
+}
+
+nav a {
+    color: white;
+}
+
+nav a:hover {
+    color: #dbeafe;
+}
+
+section {
+    background-color: white;
+}
+
+section h2 {
+    color: #2563eb;
+}
+
+.competence {
+    background-color: #eff6ff;
+    color: #1e40af;
+    border-color: #93c5fd;
+}
+
+.competence:hover {
+    background-color: #dbeafe;
+}
+
+.btn {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #1d4ed8;
+}
+
+footer {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.important {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+#formMessage {
+    color: #16a34a;
+}
